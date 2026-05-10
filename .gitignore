@@ -1,0 +1,21 @@
+# Pastas do Claude Code (não enviar)
+.claude/
+CLAUDE.md
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Dados gerados pelo programa em runtime
+data/sensor_raw.csv
+data/monitor.db
+data/checkpoint.txt
+logs/*.log
+
+# Sistema operacional e IDE
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

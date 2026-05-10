@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  simulador:
+    build: .
+    command: python src/simulador.py
+    volumes:
+      - ./data:/app/data
+
+  coletor:
+    build: .
+    command: python src/main.py
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+    depends_on:
+      - simulador
